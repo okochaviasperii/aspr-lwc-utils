@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "package",
+  "name": "asprLwcUtils",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "56.0"

@@ -11,6 +11,7 @@
     "start:compat": "npm run copy_assets && lwr serve --mode compat",
     "start:prod-compat": "npm run copy_assets && lwr serve --mode prod-compat",
     "copy_assets": "cp -a node_modules/@salesforce-ux/design-system/assets/. ./src/assets",
+    "push_to_org": "cd package && sfdx force:source:push -f",
     "build": "npm run copy_assets && rollup --config"
   },
   "dependencies": {
