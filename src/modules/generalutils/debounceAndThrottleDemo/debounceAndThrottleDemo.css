@@ -1,0 +1,25 @@
+.scroll-container {
+    overflow: auto;
+    height: 400px;
+    width: 200px;
+    border: 1px solid black;
+    margin-right: 30px;
+}
+
+.scroll-inner {
+    width: 200px;
+    height: 2000px;
+    font-size: xx-large;
+
+}
+
+.scroll-counter {
+    font-size: x-large;
+    top: 300px;
+    margin-bottom: 20px;
+}
+
+.scroll-example {
+    display: flex;
+    align-items: center;
+}

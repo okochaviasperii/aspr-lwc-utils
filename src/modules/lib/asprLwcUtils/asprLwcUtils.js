@@ -1,10 +1,12 @@
 import * as objectUtils from "./objectUtils/index.js";
+import * as generalUtils from "./generalUtils/index.js";
+import * as stringUtils from "./stringUtils/index.js";
 
 const asprLwcUtils = {
-    objectUtils
+    objectUtils,
+    generalUtils,
+    stringUtils
 };
-
-console.log("OMIT FUNCTION: ", asprLwcUtils.objectUtils.omit);
 
 window.asprLwcUtils = asprLwcUtils;
 

@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Debounce &#38; Throttle">
+        <ui-lightning-card-p><b>Debounce</b> and <b>throttle</b> are two related (but not similar) techniques in JavaScript for optimization of resource-heavy tasks, usually ones that are trigerred by DOM events.</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>Both functions allow us to have control how many times a function will be called over time, and limit it to a level that fits our use case. This way, a resource-heavy function (for example an API call), will not be over-trigerred, which could cause our application to substantially slow down or even freeze.</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>For example, let's consider a use case of a function that's trigerred by a scroll event. Scroll the container below, and see how many scroll events are registered:</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>
+            <div class="scroll-example">
+                <div class="scroll-container" onscroll={scrollHandler}>
+                    <div class="scroll-inner"></div>
+                </div>
+                <div>
+                    <div class="scroll-counter">{counterText}</div>
+                    <div class="scroll-counter">{scrollPositionText}</div>
+                </div>
+            </div>
+        </ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>Now imagine this scroll events call a API to update a table data. That's a lot of calls! Debounce and throttle are exactly for these use cases, where we probably don't need as many calls to our function as there are events.</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>We will now discuss each of the functions, what it does, and what is it used for. Before we move on though, here are some links that you might find useful!</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>
+            <a target="_blank" href="https://css-tricks.com/debouncing-throttling-explained-examples/">Further details and examples of debounce and throttle</a>
+        </ui-lightning-card-p>
+        <ui-lightning-card-p>
+            <a target="_blank" href="https://davidwalsh.name/javascript-debounce-function">Implementation details for debounce</a>
+        </ui-lightning-card-p>
+        <ui-lightning-card-p>
+            <a target="_blank" href="https://stackoverflow.com/questions/27078285/simple-throttle-in-javascript">Implementation details for throttle</a>
+        </ui-lightning-card-p>
+        <br />
+    </lightning-card>
+</template>
