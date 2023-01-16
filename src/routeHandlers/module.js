@@ -7,7 +7,7 @@ export default function moduleRouteHandler(viewRequest, handlerContext) {
         // Required: customize the current route by setting:
         // { rootComponent?, contentTemplate?, layoutTemplate? }
         view: {
-            rootComponent: `demo/${module.replaceAll(".", "/")}`,
+            rootComponent: `${module.replaceAll(".", "/")}`,
             layoutTemplate: "$layoutsDir/main.html"
         },
         // Required: pass context to the templates

@@ -1,5 +1,22 @@
 <template>
-    <a href="/module/test">TEST</a>
-    <h1>HOME</h1>
-    <lightning-button variant="brand" label="Click me!"></lightning-button>
+    <div class="header">
+        <h1>Dev Kit LWC Utils Demo</h1>
+    </div>
+    <div class="main-container">
+        <div class="left-col">
+            <template for:each={templatesList} for:item="template">
+                <span 
+                    key={template.templateName} 
+                    class={template.className} 
+                    onclick={onSelectTemplate}>
+                    {template.templateName}
+                </span>
+            </template>
+        </div>
+        <div class="right-col">
+            <template if:true={selectedTemplate}>
+                <demo-template-renderer template={selectedTemplate}></demo-template-renderer>
+            </template>
+        </div>
+    </div>
 </template>

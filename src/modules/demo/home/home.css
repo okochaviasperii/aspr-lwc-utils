@@ -1,0 +1,57 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 100vh;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0 0 1rem #9da5ab;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: white;
+    height: 100vh;
+    overflow: auto;
+}
+
+.left-col {
+    flex: 0.2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0.5rem #9da5ab;
+    position: sticky;
+    top: 0;
+}
+
+.left-col > * {
+    padding: 10px;
+}
+
+.right-col {
+    flex: 1;
+    padding: 20px;
+    min-width: 0;
+}
+
+.template-selector {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.selected {
+    font-weight: bold;
+}
