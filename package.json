@@ -6,16 +6,24 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf __lwr_cache__",
-    "dev": "lwr serve",
-    "start": "lwr serve --mode prod",
-    "start:compat": "lwr serve --mode compat",
-    "start:prod-compat": "lwr serve --mode prod-compat"
+    "dev": "npm run copy_assets && lwr serve",
+    "start": "npm run copy_assets && lwr serve --mode prod",
+    "start:compat": "npm run copy_assets && lwr serve --mode compat",
+    "start:prod-compat": "npm run copy_assets && lwr serve --mode prod-compat",
+    "copy_assets": "cp -a node_modules/@salesforce-ux/design-system/assets/. ./src/assets",
+    "build": "npm run copy_assets && rollup --config"
   },
   "dependencies": {
+    "lightning-base-components": "^1.17.2-alpha",
     "lwc": "2.17.0",
     "lwr": "0.8.9"
   },
   "engines": {
     "node": ">=14.15.4 <19"
+  },
+  "devDependencies": {
+    "@salesforce-ux/design-system": "^2.20.1",
+    "cpx": "^1.5.0",
+    "rollup": "^2.37.1"
   }
 }
