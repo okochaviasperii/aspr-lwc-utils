@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Throttle Demo">
+        <ui-lightning-card-p>Throttling is used to <b>limit the execution of a function to execute no more than once every X milliseconds.</b></ui-lightning-card-p>
+        <ui-lightning-card-p>This allows us to "sample" continuos actions, like the scrolling example above, and periodically respond to the event. It's a bit like polling, but with DOM events!</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>Let's rewrite our scrolling example by using throttle. You will see that while we maintain accurate (enough) information about the scroll position, the event gets fired much less frequently, that will result in less calls to our API.</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>
+            <div class="scroll-example">
+                <div class="scroll-container" onscroll={scrollHandler}>
+                    <div class="scroll-inner"></div>
+                </div>
+                <div>
+                    <div class="scroll-counter">{counterText}</div>
+                    <div class="scroll-counter">{scrollPositionText}</div>
+                </div>
+            </div>
+        </ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>Another classic example of throttling is resizing. We often don't need every step of a resizing action, and sampling it periodically might drastically improve performace.</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>See this behaviour in action below: resize the two squares and notice how the printed dimensions differently!</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>
+            <div class="throttle-demo-container">
+                <h2><b>Non-throttled resizeable div</b></h2>
+                <div class="resizeable">
+                    <p>Width: {width1}</p>
+                    <p>Height: {height1}</p>
+                </div>
+                <br />
+                <h2><b>Throttled resizeable div</b></h2>
+                <div class="resizeable">
+                    <p>Width: {width2}</p>
+                    <p>Height: {height2}</p>
+                </div>
+            </div>
+        </ui-lightning-card-p>
+    </lightning-card>
+</template>

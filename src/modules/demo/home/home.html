@@ -5,12 +5,22 @@
     <div class="main-container">
         <div class="left-col">
             <template for:each={templatesList} for:item="template">
-                <span 
-                    key={template.templateName} 
-                    class={template.className} 
-                    onclick={onSelectTemplate}>
-                    {template.templateName}
-                </span>
+                <div class="template-expandable" key={template.templateName}>
+                    <div class={template.className}>
+                        <template if:true={template.isOpen}>
+                            <lightning-icon icon-name="utility:dash" size="xx-small" alternative-text="Close" title="Close" onclick={template.toggleFunctionsList}></lightning-icon>
+                        </template>
+                        <template if:false={template.isOpen}>
+                            <lightning-icon icon-name="utility:add" size="xx-small" alternative-text="Open" title="Open" onclick={template.toggleFunctionsList}></lightning-icon>
+                        </template>    
+                        <span onclick={onSelectTemplate}>{template.templateName}</span>
+                    </div>
+                    <template if:true={template.isOpen}>
+                        <template for:each={template.functions} for:item="func">
+                            <a href={func.href} class="function-name" key={func.func}>{func.func}</a>
+                        </template>
+                    </template>
+                </div>
             </template>
         </div>
         <div class="right-col">

@@ -1,4 +1,4 @@
-<template>
+<template lwc:render-mode="light">
     <h2>General Utils</h2>
     <ui-row-layout>
         <!-- <c-row-layout-item>
@@ -10,14 +10,14 @@
         <c-row-layout-item>
             <c-load-style-with-cache-demo></c-load-style-with-cache-demo>
         </c-row-layout-item> -->
-        <ui-row-layout-item>
+        <ui-row-layout-item id="generalUtils-debounceAndThrottle">
             <generalutils-debounce-and-throttle-demo></generalutils-debounce-and-throttle-demo>
         </ui-row-layout-item>
-        <ui-row-layout-item>
+        <ui-row-layout-item id="generalUtils-debounce()">
             <generalutils-debounce-demo></generalutils-debounce-demo>
         </ui-row-layout-item>
-        <!-- <c-row-layout-item>
-            <c-throttle-demo></c-throttle-demo>
-        </c-row-layout-item> -->
+        <ui-row-layout-item id="generalUtils-throttle()">
+            <generalutils-throttle-demo></generalutils-throttle-demo>
+        </ui-row-layout-item>
     </ui-row-layout>
 </template>
