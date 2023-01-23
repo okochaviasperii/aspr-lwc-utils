@@ -1,9 +1,19 @@
 <template>
     <lightning-card title="Debounce Demo">
+        <ui-lightning-card-p><b>Signature</b></ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p><ui-highlighted-code code={signatureCode}></ui-highlighted-code></ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p><b>Description</b></ui-lightning-card-p>
+        <br />
         <ui-lightning-card-p>Debouncing is used to <b>delay the execution of a function until a certain amount of time has passed since it was last trigerred.</b></ui-lightning-card-p>
         <ui-lightning-card-p>While this sounds ike it might result in bad UX, it's actually the opposite. The wait (delay) time is usually short and unnoticeable by the user, but allows us to "group" multiple calls into one, thus optimizing the performance of our feature.</ui-lightning-card-p>
         <br />
+        <ui-lightning-card-p><b>Example</b></ui-lightning-card-p>
+        <br />
         <ui-lightning-card-p>The classic example of how debouncing is useful is an autocomplete input that calls an API. We wouldn't want to send a request on every character the user types, as this will result in too many calls. Instead, we use a debounced version - we only send the request if an X amount of time has passed since the function was last called, without it being called again.</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p><ui-highlighted-code code={exampleCode}></ui-highlighted-code></ui-lightning-card-p>
         <br />
         <ui-lightning-card-p>See this behaviour in action below: type in the non-debounced input, then in the debounced input, and notice the change in the feedback!</ui-lightning-card-p>
         <br />

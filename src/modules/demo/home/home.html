@@ -13,11 +13,11 @@
                         <template if:false={template.isOpen}>
                             <lightning-icon icon-name="utility:add" size="xx-small" alternative-text="Open" title="Open" onclick={template.toggleFunctionsList}></lightning-icon>
                         </template>    
-                        <span onclick={onSelectTemplate}>{template.templateName}</span>
+                        <a href={template.href}>{template.templateName}</a>
                     </div>
                     <template if:true={template.isOpen}>
                         <template for:each={template.functions} for:item="func">
-                            <a href={func.href} class="function-name" key={func.func}>{func.func}</a>
+                            <a href={func.href} class="function-name" key={func.func} onclick={template.onSelectTemplate}>{func.func}</a>
                         </template>
                     </template>
                 </div>

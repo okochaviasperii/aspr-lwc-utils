@@ -4,6 +4,11 @@ const generalUtilsList = [
     "throttle()"
 ]
 
+const stringUtilsList = [
+    "toCamelCase()"
+]
+
 export default {
-    generalUtilsList
+    generalUtilsList,
+    stringUtilsList
 }
