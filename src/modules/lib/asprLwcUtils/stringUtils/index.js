@@ -1,2 +1,2 @@
-export { camelCaseToUpperCase } from "./camelCaseToUpperCase";
+export { camelCaseToCapitalized } from "./camelCaseToCapitalized";
 export { toCamelCase } from "./toCamelCase";

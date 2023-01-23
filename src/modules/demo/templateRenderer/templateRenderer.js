@@ -7,4 +7,8 @@ export default class AsprTemplateRenderer extends LightningElement {
     render() {
         return this.template || defaultTemplate;
     }
+
+    renderedCallback() {
+
+    }
 }

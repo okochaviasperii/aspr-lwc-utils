@@ -9,6 +9,26 @@ export default class DebounceDemo extends LightningElement {
     
     debounceWait = 250;
 
+    signatureCode = `
+        function debounce(func: Function, [wait: number = 0], [context: Object = this], [leading: boolean = false]) => Function
+    `
+
+    exampleCode = `
+        // non-debounced changed handler
+        onChangeInput(e) {
+            const { value } = e.target;
+            this.onSetNewSearchValue(value);
+        }
+
+        // debounced change handler
+        debouncedOnChangeInput = debounce(this.onSetNewSearchValue, this.debounceWait, this)
+
+        onChangeInput_debounced(e) {
+            const { value } = e.target;
+            this.debouncedOnChangeInput(value);
+        }
+    `
+
     get displayLog() {
         return this.touched ? `Changed input value to: ${this.log}` : "";
     }
@@ -25,11 +45,13 @@ export default class DebounceDemo extends LightningElement {
         this.requests++;
     }
 
+    // non-debounced changed handler
     onChangeInput(e) {
         const { value } = e.target;
         this.onSetNewSearchValue(value);
     }
 
+    // debounced change handler
     debouncedOnChangeInput = debounce(this.onSetNewSearchValue, this.debounceWait, this)
 
     onChangeInput_debounced(e) {

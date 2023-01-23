@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="To Camel Case Demo">
+        <ui-lightning-card-p><b>Signature</b></ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p><ui-highlighted-code code={signatureCode}></ui-highlighted-code></ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p><b>Description</b></ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>Converts any string to camel case, based on capital letters, underscores, or hyphens.</ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p><b>Arguments</b></ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>
+            <ul>
+                <li><code>string: </code> The string to convert.</li>
+            </ul>
+        </ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p><b>Example</b></ui-lightning-card-p>
+        <br />
+        <ui-lightning-card-p>
+            <ui-highlighted-code code={exampleCode}></ui-highlighted-code>
+        </ui-lightning-card-p>
+    </lightning-card>
+</template>

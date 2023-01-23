@@ -1,1 +1,1 @@
-export { camelCaseToUpperCase } from "./camelCaseToUpperCase";
+export { camelCaseToCapitalized } from "./camelCaseToCapitalized";

@@ -16,6 +16,7 @@
     "build": "npm run copy_assets && rollup --config"
   },
   "dependencies": {
+    "highlight.js": "^11.7.0",
     "lightning-base-components": "^1.17.2-alpha",
     "lwc": "2.17.0",
     "lwr": "0.8.9"
