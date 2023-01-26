@@ -13,7 +13,8 @@
     "copy_assets": "cp -a node_modules/@salesforce-ux/design-system/assets/. ./src/assets",
     "copy_to_package": "cp -a src/modules/lib/asprLwcUtils/. ./package/force-app/main/default/lwc/asprLwcUtils",
     "push_to_org": "npm run copy_to_package && cd package && sfdx force:source:push -f",
-    "build": "npm run copy_assets && rollup --config"
+    "build_lib": "npm run copy_assets && rollup --config",
+    "build": "npm run copy_assets && lwr build"
   },
   "dependencies": {
     "highlight.js": "^11.7.0",
