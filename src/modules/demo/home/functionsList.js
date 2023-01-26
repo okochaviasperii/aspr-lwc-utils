@@ -1,11 +1,11 @@
 const generalUtilsList = [
     "Debounce and Throttle",
-    "debounce()",
-    "throttle()"
+    "debounce",
+    "throttle"
 ]
 
 const stringUtilsList = [
-    "toCamelCase()"
+    "toCamelCase"
 ]
 
 export default {
