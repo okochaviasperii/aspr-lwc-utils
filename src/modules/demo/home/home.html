@@ -8,10 +8,10 @@
                 <div class="template-expandable" key={template.templateName}>
                     <div class={template.className}>
                         <template if:true={template.isOpen}>
-                            <lightning-icon icon-name="utility:dash" size="xx-small" alternative-text="Close" title="Close" onclick={template.toggleFunctionsList}></lightning-icon>
+                            <div class="collapse-icon" onclick={template.toggleFunctionsList}>-</div>
                         </template>
                         <template if:false={template.isOpen}>
-                            <lightning-icon icon-name="utility:add" size="xx-small" alternative-text="Open" title="Open" onclick={template.toggleFunctionsList}></lightning-icon>
+                            <div class="collapse-icon" onclick={template.toggleFunctionsList}>+</div>
                         </template>    
                         <a href={template.href}>{template.templateName}</a>
                     </div>
