@@ -18,9 +18,9 @@
         <ui-lightning-card-p>See this behaviour in action below: type in the non-debounced input, then in the debounced input, and notice the change in the feedback!</ui-lightning-card-p>
         <br />
         <ui-lightning-card-p>
-            <lightning-input label="Non-debounced input" onchange={onChangeInput} value={log}></lightning-input>
+            <input label="Non-debounced input" onkeyup={onChangeInput} value={log}></input>
             <br />
-            <lightning-input label="debounced input" onchange={onChangeInput_debounced} value={log}></lightning-input>
+            <input label="debounced input" onkeyup={onChangeInput_debounced} value={log}></input>
             <br />
             <template if:true={touched}>
                 <div class="logger">{displayLog}</div>

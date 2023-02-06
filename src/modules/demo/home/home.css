@@ -52,11 +52,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-.template-selector > lightning-icon {
+.template-selector > div {
     margin-right: 10px;
-    border: 1px solid #9da5ab;
+    /* border: 1px solid #9da5ab; */
     padding: 1px;
 }
 
