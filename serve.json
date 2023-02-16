@@ -178,19 +178,19 @@
   },
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/f8e88b98a7bae399246565bce589f72a19ef4c8a/bundle_demo_home.js"
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/b274a27b386bdd165b793569e4130d13a35e2b62/bundle_demo_home.js"
   },
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo%2Fhome%2Fv%2F0_0_1",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/f8e88b98a7bae399246565bce589f72a19ef4c8a/bundle_demo_home.js"
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/b274a27b386bdd165b793569e4130d13a35e2b62/bundle_demo_home.js"
   },
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/f8e88b98a7bae399246565bce589f72a19ef4c8a/bundle_demo_home.js"
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/b274a27b386bdd165b793569e4130d13a35e2b62/bundle_demo_home.js"
   },
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo%2Fhome",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/f8e88b98a7bae399246565bce589f72a19ef4c8a/bundle_demo_home.js"
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/demo/home/v/0_0_1/s/b274a27b386bdd165b793569e4130d13a35e2b62/bundle_demo_home.js"
   },
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwc/v/2_17_0",
@@ -203,22 +203,6 @@
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwc",
    "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwc/v/2_17_0/s/eb5fb838f568a4f15fbd89a3681e7c3688548766/bundle_lwc.js"
-  },
-  {
-   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
-  },
-  {
-   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr%2Fprofiler%2Fv%2F0_8_9",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
-  },
-  {
-   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
-  },
-  {
-   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr%2Fprofiler",
-   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
   },
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/@lwc/synthetic-shadow/v/2_17_0",
@@ -235,6 +219,22 @@
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/%40lwc%2Fsynthetic-shadow",
    "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/@lwc/synthetic-shadow/v/2_17_0/s/2439e6c0109924ba313211e725999a3634e7c550/bundle_@lwc_synthetic-shadow.js"
+  },
+  {
+   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9",
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
+  },
+  {
+   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr%2Fprofiler%2Fv%2F0_8_9",
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
+  },
+  {
+   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler",
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
+  },
+  {
+   "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr%2Fprofiler",
+   "destination": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/profiler/v/0_8_9/s/d4e8a886e79511b25e69b2b5721465a0f9034e72/bundle_lwr_profiler.js"
   },
   {
    "source": "https://okochaviasperii.github.io/aspr-lwc-utils/1/bundle/esm/l/en-US/bi/0/module/mi/lwr/esmLoader/v/0_8_9",
