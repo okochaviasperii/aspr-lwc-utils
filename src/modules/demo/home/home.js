@@ -27,8 +27,9 @@ export default class DevKitLWCUtilsDemo extends LightningElement {
     }
 
     get urlPrefix() {
-        const env = process.env.NODE_ENV;
-        return env === "prod" ? "/aspr-lwc-utils/#" : "/#";
+        // const env = process.env.NODE_ENV;
+        // return env === "prod" ? "/aspr-lwc-utils/#" : "/#";
+        return "#";
     }
 
     get templatesList() {
