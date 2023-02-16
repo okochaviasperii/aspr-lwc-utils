@@ -25,7 +25,7 @@ jobs:
         shell: bash
 
       - name: Copy index.html file to a custom 404.html (routing)
-        run: ./replace_relative_paths.sh
+        run: ./duplicate_index.sh
         shell: bash
 
       - name: Deploy 🚀
