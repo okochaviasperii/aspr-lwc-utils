@@ -20,6 +20,10 @@ jobs:
           npm install
           npm run build
 
+      - name: Replace relative paths
+        run: ./replace_relative_paths.sh
+        shell: bash
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

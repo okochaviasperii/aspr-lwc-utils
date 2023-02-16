@@ -14,7 +14,7 @@
     "copy_to_package": "cp -a src/modules/lib/asprLwcUtils/. ./package/force-app/main/default/lwc/asprLwcUtils",
     "push_to_org": "npm run copy_to_package && cd package && sfdx force:source:push -f",
     "build_lib": "npm run copy_assets && rollup --config",
-    "build": "npm run copy_assets && lwr build && ./replace_relative_paths.sh"
+    "build": "npm run copy_assets && lwr build"
   },
   "dependencies": {
     "highlight.js": "^11.7.0",
