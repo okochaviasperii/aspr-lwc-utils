@@ -26,17 +26,22 @@ export default class DevKitLWCUtilsDemo extends LightningElement {
         }
     }
 
+    get urlPrefix() {
+        const env = process.env.NODE_ENV;
+        return env === "prod" ? "/aspr-lwc-utils/#" : "/#";
+    }
+
     get templatesList() {
         return Object.keys(this.templates).map(template => ({
             templateName: camelCaseToCapitalized(template),
             className: `template-selector ${this._selectedTemplate === template ? "selected" : ""}`,
-            functions: this.templates[template].functions.map(func => ({ func, href: `/#${template}-${toCamelCase(func)}` })),
+            functions: this.templates[template].functions.map(func => ({ func, href: `${this.urlPrefix}${template}-${toCamelCase(func)}` })),
             isOpen: this.templates[template].isOpen,
             toggleFunctionsList: (e) => {
                 e.stopPropagation();
                 this.templates[template].isOpen = !this.templates[template].isOpen
             },
-            href: `/#${template}`,
+            href: `${this.urlPrefix}${template}`,
             onSelectTemplate: () => {
                 if (this._selectedTemplate !== template) {
                     this._selectedTemplate = template;
