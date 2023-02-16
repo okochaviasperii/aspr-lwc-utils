@@ -32,6 +32,7 @@ export default class DevKitLWCUtilsDemo extends LightningElement {
     }
 
     get templatesList() {
+        console.log("URL PREFIX: ", this.urlPrefix);
         return Object.keys(this.templates).map(template => ({
             templateName: camelCaseToCapitalized(template),
             className: `template-selector ${this._selectedTemplate === template ? "selected" : ""}`,
