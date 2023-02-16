@@ -24,6 +24,10 @@ jobs:
         run: ./replace_relative_paths.sh
         shell: bash
 
+      - name: Copy index.html file to a custom 404.html (routing)
+        run: ./replace_relative_paths.sh
+        shell: bash
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
